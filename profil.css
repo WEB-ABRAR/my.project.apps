@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.photo-frame {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #bbb, #888);
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 5px solid #ccc;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.info p {
+  margin: 10px 0;
+}
+
+.actions button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5555ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background-color: #3333cc;
+}
+
+.request-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9ff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.request-info h3 {
+  margin-bottom: 15px;
+  color: #3333aa;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.request-row {
+  display: grid;
+  grid-template-columns: 30px 100px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.request-row .label {
+  font-weight: 600;
+  color: #444;
+}
+
+.request-row .value {
+  font-weight: bold;
+  color: #000;
+  word-break: break-word;
+}
+
+.request-row .icon {
+  font-size: 18px;
+  text-align: center;
+}
+
+.repeat-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff8800;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.repeat-btn:hover {
+  background-color: #e06700;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pengguna</title>
+  <link rel="stylesheet" href="profil.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <div class="photo-frame">
+      <label for="photo-input">
+        <img id="profile-photo" src="https://via.placeholder.com/150" alt="Foto Profil" />
+        <input type="file" id="photo-input" accept="image/*" hidden />
+      </label>
+    </div>
+
+    <div class="info">
+      <p><strong>Username:</strong> <span id="username">abrar_user</span></p>
+      <p><strong>Email:</strong> <span id="email">abrar@email.com</span></p>
+    </div>
+
+    <div class="actions">
+      <button onclick="resetPassword()">Reset Password</button>
+      <button onclick="logout()">Logout</button>
+      <button class="home-btn" onclick="window.location.href='beranda.html'">Kembali ke Beranda 🏠</button>
+
+      <div class="request-info">
+        <h3>Request Terakhir Anda 💈</h3>
+
+        <div class="request-row">
+          <span class="icon">💇‍♂️</span>
+          <span class="label">Model:</span>
+          <span id="req-model" class="value">-</span>
+        </div>
+
+        <div class="request-row">
+          <span class="icon">📅</span>
+          <span class="label">Tanggal:</span>
+          <span id="req-tanggal" class="value">-</span>
+        </div>
+
+        <div class="request-row">
+          <span class="icon">🕒</span>
+          <span class="label">Jam:</span>
+          <span id="req-jam" class="value">-</span>
+        </div>
+
+        <div class="request-row">
+          <span class="icon">📝</span>
+          <span class="label">Catatan:</span>
+          <span id="req-catatan" class="value">-</span>
+        </div>
+
+        <button class="repeat-btn" onclick="window.location.href='request.html'">Pesan Ulang ✏️</button>
+      </div>
+
+    </div>
+
+  <script src="profil.js"></script>
+</body>
+</html>

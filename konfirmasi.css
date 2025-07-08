@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  background: white;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+#modelTerpilih {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.thanks {
+  margin: 20px 0;
+  color: #333;
+}
+
+.maps-link a {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.maps-link a:hover {
+  background: #0056b3;
+}
+
+.kembali {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}

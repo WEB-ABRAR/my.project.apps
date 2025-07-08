@@ -1,0 +1,163 @@
+/* barber.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-profile {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-profile:hover {
+    background-color: #0056b3;
+}
+
+/* Gallery styling */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* Ukuran fix, tidak berubah saat zoom */
+  gap: 24px;
+  justify-content: center; /* Tengah */
+  padding: 30px 20px;
+}
+
+.model {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.model:hover {
+    transform: scale(1.05);
+}
+
+.model img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.model p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Button styling */
+.lanjut-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#lanjutBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#lanjutBtn:hover {
+    background-color: #218838;
+}
+
+.summary {
+  margin: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#lanjutBtn {
+  display: none;
+}
+
+.model.selected {
+  transform: scale(1.05);
+  border: 3px solid #00ff66;
+  box-shadow: 0 8px 20px rgba(0, 255, 100, 0.3);
+}
+
+.main-content {
+  flex-grow: 1;
+  min-width: 880px;
+  padding-bottom: 40px;
+}
+
+.dashboard-container {
+  min-width: 1100px;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow-x: auto;
+}

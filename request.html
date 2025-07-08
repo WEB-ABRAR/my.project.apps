@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request Tukang Cukur</title>
+  <link rel="stylesheet" href="request.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Request Tukang Cukur</h2>
+
+    <!-- Tampilkan model yang dipilih -->
+    <div id="model-terpilih" class="model-box">
+      Loading model rambut yang Anda pilih...
+    </div>
+
+    <form id="requestForm">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="tanggal">Tanggal Cukur:</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <label for="jam">Jam Cukur:</label>
+      <input type="time" id="jam" name="jam" required>
+
+      <label for="catatan">Catatan Tambahan:</label>
+      <textarea id="catatan" name="catatan" rows="4" placeholder="Sertakan nama anda pada catatan ini agar kapster bisa mengenali pesanan anda saat menyebut nama yang disertakan"></textarea>
+
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+  </div>
+
+  <script src="request.js"></script>
+</body>
+</html>
